@@ -42,8 +42,8 @@ export const Description: React.FC<DescriptionProps> = ({
   };
 
   return (
-    <Card className="w-full border-none bg-transparent shadow-none">
-      <CardHeader className="gap-5">
+    <Card className="border-none bg-transparent shadow-none">
+      <CardHeader className="gap-5 p-0">
         <CardTitle>Synopsis</CardTitle>
         <CardDescription>
           {displayText}

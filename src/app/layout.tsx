@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { defaultFont } from "./styles/fonts";
+import { defaultFont } from "@/fonts";
 import "./styles/globals.css";
 import { ThemeProvider } from "@/lib/providers/theme-provider";
 

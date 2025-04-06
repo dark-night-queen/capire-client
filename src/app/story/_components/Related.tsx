@@ -8,7 +8,7 @@ import {
 
 export const Related = () => {
   return (
-    <Card className="w-full border-dashed border-3">
+    <Card className="border-dashed border-3">
       <CardHeader className="gap-5">
         <CardTitle>Similar Titles</CardTitle>
         <CardDescription>...</CardDescription>

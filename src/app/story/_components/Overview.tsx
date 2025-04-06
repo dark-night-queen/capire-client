@@ -3,27 +3,39 @@
 import React from "react";
 import Image from "next/image";
 import ImageComponent from "@/assets/README.png";
-import { Grid } from "@/lib/components/grid";
+import { Box, Grid } from "@/lib/components";
+import { Badge, Button } from "@/lib/components/ui";
 import { Card, CardContent, CardTitle } from "@/lib/components/ui/card";
-import { Badge } from "@/lib/components/ui/badge";
-import { Box } from "@/lib/components/box";
 
 import { StarIcon } from "@heroicons/react/24/solid";
-import { Button } from "@/lib/components/ui/button";
 
 interface OverviewProps {
-  name: string;
+  title: string;
   author: string;
   status: string;
   tags: string[];
   genre: string;
-  rating: number; // Rating value
-  ratingCount: number; // Number of people who rated
-  imageUrl?: string; // Optional image URL
+  rating: number;
+  ratingCount: number;
+  imageUrl?: string;
 }
 
+/**
+ * BookOverview Component
+ *
+ * Displays an overview of a book, including its title, author, status, tags, genre, rating, and a button to read now.
+ *
+ * @param title - The title of the book
+ * @param author - The author of the book
+ * @param status - The current status of the book (e.g., "Completed", "Ongoing")
+ * @param tags - An array of tags associated with the book
+ * @param genre - The genre of the book
+ * @param rating - The rating of the book
+ * @param ratingCount - The number of people who rated the book
+ * @param imageUrl - Optional URL for the book's cover image
+ */
 export const Overview: React.FC<OverviewProps> = ({
-  name,
+  title,
   author,
   status,
   tags,
@@ -39,7 +51,7 @@ export const Overview: React.FC<OverviewProps> = ({
   };
 
   return (
-    <Card className="m-6 opacity-90 shadow-2xl">
+    <Card className="opacity-90 shadow-2xl">
       <CardContent className="flex flex-col md:flex-row gap-6 md:gap-10 p-4 md:p-10 rounded-xl">
         <Box className="flex flex-col items-center">
           <Image
@@ -55,7 +67,7 @@ export const Overview: React.FC<OverviewProps> = ({
           <Badge className="text-xs font-semibold capitalize self-top rounded-xl h-7">
             {status}
           </Badge>
-          <CardTitle className="text-xl">{name}</CardTitle>
+          <CardTitle className="text-xl">{title}</CardTitle>
 
           <p className="text-sm text-gray-700 dark:text-gray-300">{author}</p>
 
@@ -83,7 +95,7 @@ export const Overview: React.FC<OverviewProps> = ({
           </Box>
 
           <Button
-            variant="outline"
+            variant="destructive"
             className="w-full self-end"
             onClick={handleReadNow}
           >

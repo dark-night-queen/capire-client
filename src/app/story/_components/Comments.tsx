@@ -8,7 +8,7 @@ import {
 
 export const Comments = () => {
   return (
-    <Card className="w-full border-dashed border-3">
+    <Card className="border-dashed border-3">
       <CardHeader className="gap-5">
         <CardTitle>Comments</CardTitle>
         <CardDescription>...</CardDescription>
