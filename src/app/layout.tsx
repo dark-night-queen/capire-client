@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/lib/providers/theme-provider";
 
-// Load the Inter font
-const inter = Inter({ subsets: ["latin"] });
+// Load the montserrat font
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Metadata for the app
 export const metadata: Metadata = {
@@ -32,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
