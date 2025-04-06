@@ -1,14 +1,11 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import "./globals.css";
+import { defaultFont } from "./styles/fonts";
+import "./styles/globals.css";
 import { ThemeProvider } from "@/lib/providers/theme-provider";
-
-// Load the montserrat font
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 // Metadata for the app
 export const metadata: Metadata = {
-  title: "Capire",
+  title: "Grimoire",
   description: "Reading and Understanding Stories",
   icons: [
     {
@@ -32,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${montserrat.className} antialiased`}>
+      <body className={`${defaultFont.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
