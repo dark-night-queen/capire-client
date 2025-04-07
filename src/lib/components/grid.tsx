@@ -27,24 +27,19 @@ function Grid({
   return (
     <div
       data-slot="grid"
-      className={cn(
-        "grid",
-        `gap-${gap}`,
-        borderRadius,
-        className
-      )}
+      className={cn("grid", `gap-${gap}`, borderRadius, className)}
       {...props}
     />
   );
 }
 
 /**
-    * GridItem Component
-    * 
-    * Child Element of the Grid Component
-    * 
-    * @param className - Optional additional class names for styling
-    * @param props - Additional props to be passed to the div element
+ * GridItem Component
+ *
+ * Child Element of the Grid Component
+ *
+ * @param className - Optional additional class names for styling
+ * @param props - Additional props to be passed to the div element
  */
 function GridItem({ className, ...props }: React.ComponentProps<"div">) {
   return (

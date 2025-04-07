@@ -1,8 +1,4 @@
-import {
-  Montserrat,
-  // Delius_Swash_Caps,
-  Montserrat_Alternates,
-} from "next/font/google";
+import { Montserrat, Montserrat_Alternates, Rye } from "next/font/google";
 
 // Load the fonts
 const montserrat = Montserrat({
@@ -14,7 +10,12 @@ const montserrat_alternates = Montserrat_Alternates({
   weight: ["400", "500", "600", "700"],
 });
 
+const rye = Rye({
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 const defaultFont = montserrat;
 const accentFont = montserrat_alternates;
 
-export { defaultFont, accentFont };
+export { defaultFont, accentFont, rye };
