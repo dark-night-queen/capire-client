@@ -3,5 +3,8 @@
   "arrowParens": "always",
   "semi": true,
   "tabWidth": 2,
-  "trailingComma": "all"
+  "trailingComma": "es5"
 }
+
+
+
