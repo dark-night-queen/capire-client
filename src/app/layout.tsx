@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { defaultFont } from "@/fonts";
-import "./styles/globals.css";
+import { defaultFont } from "@/styles/fonts";
+import "../styles/globals.css";
 import { ThemeProvider } from "@/lib/providers/theme-provider";
 
 // Metadata for the app

@@ -1,12 +1,10 @@
 "use client";
 
-import { accentFont, rye } from "@/fonts";
-import Image from "next/image";
+import { accentFont, rye } from "@/styles/fonts";
 import TitleDivider from "@/icons/section-divider.svg";
 import EndCorner from "@/icons/end-corner.svg";
 import { Card, CardContent, CardHeader, CardTitle } from "@/lib/components/ui";
 import { ScrollArea } from "@/lib/components/ui/scroll-area";
-import { transform } from "next/dist/build/swc/generated-native";
 
 export default function Chapter() {
   const chapterDetails = {

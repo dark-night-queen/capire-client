@@ -20,8 +20,8 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@/fonts": ["./src/app/styles/fonts"],
-      "@/icons": ["./src/assets/icons"],
+      "@/fonts": ["./src/styles/fonts"],
+      "@/icons/*": ["./src/assets/icons/*"]
     }
   },
   "include": ["svgr.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
