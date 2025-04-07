@@ -6,7 +6,6 @@ type GridProps = React.ComponentProps<"div"> & {
   className?: string;
 
   flexDirection?: "row" | "col" | "row-reverse" | "column-reverse";
-  flexWrap?: string;
   gap?: number;
   borderRadius?: string;
 };
@@ -21,8 +20,6 @@ type GridProps = React.ComponentProps<"div"> & {
  */
 function Grid({
   className,
-
-  flexWrap = "flex-wrap",
   gap = 6,
   borderRadius = "rounded-xl",
   ...props

@@ -1,6 +1,6 @@
 import {
   Montserrat,
-  Delius_Swash_Caps,
+  // Delius_Swash_Caps,
   Montserrat_Alternates,
 } from "next/font/google";
 
